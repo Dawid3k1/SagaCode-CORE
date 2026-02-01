@@ -1,0 +1,182 @@
+##########################
+##  S A G A - C O R E   ##
+## Created by: demoeqk  ##
+##  Konfiguracja core   ##
+##########################
+
+# ================================================================
+#                         UWAGA
+# True - Oznacza prawde, czyli, ze cos ma byc wlaczone!
+# False - Oznacza fałsz, czyli, że coś ma być wyłączone!
+# ================================================================
+
+# ============================================
+# TELEPORTACJA MIĘDZY ŚWIATAMI
+# ============================================
+cena:
+  pvp: 100.0      # Koszt teleportacji na świat PvP
+  nopvp: 100.0    # Koszt teleportacji na świat bez PvP
+
+teleport1:
+  radius: 5000    # Promień losowania spawnu przy teleportacji
+
+# ============================================
+# SKLEP KUCHARZ
+# ============================================
+shop:
+  title: "&eKucharz &7(1/1)"
+  confirmation-title: "&aPotwierdzenie zakupu"
+  items:
+    1:
+      slot: 21
+      material: APPLE
+      name: "&cJabłko"
+      lore:
+        - "&7Świeże i soczyste!"
+      price: 10
+    2:
+      slot: 22
+      material: BREAD
+      name: "&eChleb"
+      lore:
+        - "&7Ciepły i chrupiący!"
+      price: 15
+    3:
+      slot: 23
+      material: COOKIE
+      name: "&6Ciastko"
+      lore:
+        - "&7Słodkie i pyszne!"
+      price: 25
+
+# ============================================
+# SYSTEM KODÓW
+# ============================================
+codes:
+  - name: start
+    requiredTime: 30m
+    commands:
+      - "fastcase rozdaj anarchiczna <player> 16"
+      - "fastcase rozdaj eventowa <player> 4"
+      - "fastcase rozdaj rzadka <player> 32"
+      - "fastcase rozdaj zwierzaków <player> 2"
+    broadcast:
+      - ""
+      - " <dark_gray>◆ <white>Gracz <#97CFF5><player> odebrał darmowe <#97CFF5><b>klucze</b></#97CFF5>"
+      - " <dark_gray>◆ <white>Używając kodu <#97CFF5><b>/kod start</b></#97CFF5>"
+      - ""
+
+  - name: vip
+    requiredTime: 1h
+    commands:
+      - "eco give <player> 1000"
+      - "fastcase rozdaj eventowa <player> 10"
+    broadcast:
+      - ""
+      - " <dark_gray>◆ <white>Gracz <#97CFF5><player> <white>użył kodu <#97CFF5><b>VIP</b>"
+      - ""
+
+# ============================================
+# SYSTEM CHATU
+# ============================================
+chat:
+  enabled: true               # Czy chat jest włączony
+  cooldown-seconds: 5         # Czas pomiędzy wiadomościami (w sekundach)
+  bypass-permission: "sagamc.chat.bypass"
+
+# ============================================
+# SYSTEM TELEPORTACJI
+# ============================================
+teleport:
+  countdown-seconds: 5        # Czas odliczania przed teleportacją
+  cancel-on-move: true        # Czy anulować teleportację przy ruchu
+  cancel-on-damage: true      # Czy anulować teleportację przy obrażeniach
+  request-expire-seconds: 60  # Po ilu sekundach wygasa prośba o teleportację
+  spawn:
+    world: "world"
+    x: 0.5
+    y: 64.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+
+# ============================================
+# AFK ZONE
+# ============================================
+afkZoneEnabled: true          # Czy strefa AFK ma być włączona
+afkZoneRegionName: afk        # Nazwa regionu (/rg info)
+
+# Nagroda premium (klucz)
+afkPremiumRewardSeconds: 3600      # Co ile sekund losowanie (3600 = 1h)
+afkPremiumRewardChance: 50.0       # Szansa w procentach
+afkPremiumRewardCommand: fastcase rozdaj afk <player> 1
+afkPremiumBossBarColor: YELLOW
+afkPremiumBossBarStyle: SEGMENTED_20
+
+# Nagroda standardowa (pieniądze)
+afkStandardRewardSeconds: 60       # Co ile sekund nagroda (60 = 1min)
+afkStandardRewardMoney: 5.0        # Ile pieniędzy
+afkStandardBossBarColor: GREEN
+afkStandardBossBarStyle: SEGMENTED_12
+
+# ============================================
+# WIADOMOŚCI JOIN/QUIT
+# ============================================
+joinQuitMessagesEnabled: true      # Czy custom wiadomości o dolaczeniu/wyjsciu są włączone
+
+# ============================================
+# WIADOMOŚCI ŚMIERCI
+# ============================================
+deathMessagesEnabled: true         # Czy custom wiadomości o śmierci są włączone
+
+# ============================================
+# AUTO MESSAGES
+# ============================================
+autoMessagesInterval: 300          # Co ile sekund wyświetlać auto wiadomości
+autoMessages:
+  - <b><gradient:#97CFF5:#BAE0FA:#97CFF5>ꜰᴀꜱᴛᴄᴏᴅᴇ</b> <dark_gray>♯ <white>Znalazłeś cheatera? Zgłoś go na <#97CFF5><click:open_url:'https://discord.gg/fastcode'>Discordzie</click></#97CFF5>
+  - <b><gradient:#97CFF5:#BAE0FA:#97CFF5>ꜰᴀꜱᴛᴄᴏᴅᴇ</gradient></b> <dark_gray>♯ <white>Dołącz do naszej społeczności <#97CFF5><click:open_url:'https://discord.gg/fastcode'>dc.fastcode.pl</click></#97CFF5>
+
+# ============================================
+# SYSTEM HOME
+# ============================================
+homeSystem:
+  enabled: true
+  defaultLimit: 3              # Ile domów dla zwykłych graczy
+  vipLimit: 10                 # Ile domów dla VIP (permisja sagamc.home.vip)
+  cooldownSeconds: 300         # Czas między użyciem /home (5 minut)
+  teleportCountdown: 5         # Czas przed teleportacją
+
+# ============================================
+# SYSTEM WARP
+# ============================================
+warpSystem:
+  enabled: true
+  teleportCountdown: 5         # czas przed teleportacją
+
+# ============================================
+# GUI KOWAL/KSIĘGARZ
+# ============================================
+craftingGUI:
+  enabled: true
+
+# ============================================
+# SYSTEM LOTERII
+# ============================================
+lottery:
+  enabled: true
+  ticketPrice: 100.0           # Cena losu
+  drawIntervalMinutes: 60      # Co ile minut losowanie (60 = 1h)
+  minNumber: 1                 # Minimalny numer losu
+  maxNumber: 1000              # Maksymalny numer losu
+
+# ============================================
+# SYSTEM STATYSTYK
+# ============================================
+statsSystem:
+  enabled: true
+
+# ============================================
+# SYSTEM PAY (PODATEK)
+# ============================================
+payTaxPercentage: 0.05         # Procent podatku przy /pay (0.05 = 5%)

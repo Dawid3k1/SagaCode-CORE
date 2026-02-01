@@ -1,0 +1,355 @@
+##########################
+##  S A G A - C O R E   ##
+## Created by: demoeqk  ##
+##  Wiadomości pluginu  ##
+##########################
+
+# ============================================
+# WIADOMOŚCI OGÓLNE
+# ============================================
+brak-pieniedzy: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Brak wystarczających środków!</gradient> &7Nie masz <gradient:#6DFF45:#9DFF83:#6DFF45>$%cena%</gradient>"
+pvp: "§x§a§0§f§f§8§0⚔️ &8⁎ <gradient:#5B0303:#FF6E6E:#530000>Przeniesiono na świat PvP!</gradient> &7Zabrano ci <gradient:#6DFF45:#9DFF83:#6DFF45>$%cena%</gradient>"
+nopvp: "§x§8§0§c§f§f§fℹ️ &8⁎ <gradient:#0077ff:#80cfff:#0077ff>Przeniesiono na świat bez PvP!</gradient> &7Zabrano ci <gradient:#6DFF45:#9DFF83:#6DFF45>$%cena%</gradient>"
+tylko-gracz: "§x§f§f§5§5§5§5❌ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Ta komenda jest dostępna tylko dla graczy!</gradient>"
+brak-permisji: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Nie masz permisji!</gradient>"
+reload: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Plugin został pomyślnie przeładowany!</gradient>"
+
+# ============================================
+# SKLEP KUCHARZ
+# ============================================
+shop:
+  brak-pieniedzy: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Brak środków!</gradient> &7Potrzebujesz <gradient:#6DFF45:#9DFF83:#6DFF45>$%cena%</gradient>"
+  zakup-anulowany: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Zakup anulowany.</gradient>"
+  zakup-sukces: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Zakupiono przedmiot!</gradient> &7Ilość: <gradient:#FFD700:#FFED4E:#FFD700>%ilosc%x</gradient>"
+
+# ============================================
+# SYSTEM KODÓW
+# ============================================
+codes:
+  brak-argumentu: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Musisz podać kod!</gradient> &7Użyj: <gradient:#97CFF5:#BAE0FA:#97CFF5>/kod <nazwa></gradient>"
+  nie-istnieje: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Ten kod nie istnieje!</gradient>"
+  juz-uzyty: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Już użyłeś tego kodu!</gradient>"
+  brak-czasu: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Wymagany czas gry!</gradient> &7Musisz grać jeszcze <gradient:#FFD700:#FFED4E:#FFD700>%czas%</gradient>"
+  sukces: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Pomyślnie użyto kodu!</gradient> &7Kod: <gradient:#97CFF5:#BAE0FA:#97CFF5>%kod%</gradient>"
+
+# ============================================
+# SYSTEM CHATU
+# ============================================
+chat:
+  wylaczony: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Chat jest wyłączony!</gradient>"
+  cooldown: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Zwolnij!</gradient> &7Kolejną wiadomość możesz wysłać za <gradient:#FFD700:#FFED4E:#FFD700>%czas%s</gradient>"
+  wlaczono: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Chat został włączony!</gradient>"
+  wylaczono-admin: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Chat został wyłączony!</gradient>"
+  wyczyszczono: "<green>Chat został <dark_green>wyczyszczony!"
+  cleared-player: "<green>Wyczyszczono <dark_green>czat!"
+  cooldown-ustawiono: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Cooldown ustawiono na</gradient> <gradient:#FFD700:#FFED4E:#FFD700>%czas%s</gradient>"
+  usage: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Użycie:</gradient> &7/chat <on/off/clear/cooldown>"
+
+# ============================================
+# SYSTEM TELEPORTACJI
+# ============================================
+teleport:
+  tpa-usage: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Użycie:</gradient> &7/tpa <gracz>"
+  tphere-usage: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Użycie:</gradient> &7/tphere <gracz>"
+  tpaccept-usage: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Użycie:</gradient> &7/tpaccept <gracz/*>"
+  tp-usage: "§x§f§f§7§7§7§7ℹ️ &8⁎ <gradient:#aa0000:#ff5555:#aa0000>Użycie:</gradient> &7/tp <gracz>"
+  gracz-offline: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Ten gracz jest offline!</gradient>"
+  tp-do-siebie: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Nie możesz teleportować się do siebie!</gradient>"
+  prosba-wyslana: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Wysłano prośbę do</gradient> <gradient:#97CFF5:#BAE0FA:#97CFF5>%gracz%</gradient>"
+  juz-wyslana: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Już wysłałeś prośbę do tego gracza!</gradient>"
+  prosba-otrzymana: "§x§a§a§f§f§a§a✉ &8⁎ <gradient:#97CFF5:#BAE0FA:#97CFF5>%gracz%</gradient> &7prosi o teleportację do Ciebie!\n§x§a§a§f§f§a§a✓ &8⁎ &7Wpisz <gradient:#6DFF45:#9DFF83:#6DFF45>/tpaccept %gracz%</gradient>"
+  brak-prosb: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Nie masz żadnych próśb o teleportację!</gradient>"
+  prosba-zaakceptowana-target: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#97CFF5:#BAE0FA:#97CFF5>%gracz%</gradient> &7zaakceptował Twoją prośbę!"
+  prosba-zaakceptowana-sender: "§x§a§a§f§f§a§a✅ &8⁎ &7Zaakceptowano prośbę od <gradient:#97CFF5:#BAE0FA:#97CFF5>%gracz%</gradient>"
+  countdown: "§x§a§a§f§f§a§a⏱ &8⁎ &7Teleportacja za <gradient:#FFD700:#FFED4E:#FFD700>%czas%s</gradient>"
+  anulowano-ruch: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Teleportacja anulowana!</gradient> &7Poruszyłeś się."
+  anulowano-obrazenia: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Teleportacja anulowana!</gradient> &7Otrzymałeś obrażenia."
+  tp-sukces: "§x§a§a§f§f§a§a✅ &8⁎ &7Przeteleportowano do <gradient:#97CFF5:#BAE0FA:#97CFF5>%gracz%</gradient>"
+  tphere-sukces: "§x§a§a§f§f§a§a✅ &8⁎ &7Przeteleportowano <gradient:#97CFF5:#BAE0FA:#97CFF5>%gracz%</gradient> &7do siebie"
+  spawn-sukces: "§x§a§a§f§f§a§a✅ &8⁎ <gradient:#6DFF45:#9DFF83:#6DFF45>Przeteleportowano na spawn!</gradient>"
+  spawn-nie-ustawiony: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Spawn nie jest ustawiony!</gradient>"
+  prosba-wygasla: "§x§f§f§9§9§9§9⚠ &8⁎ <gradient:#FF4545:#FF8383:#FF4545>Prośba od tego gracza wygasła!</gradient>"
+
+# ============================================
+# AFK ZONE
+# ============================================
+afk:
+  enabled: <green>Dołączyłeś na strefę <dark_green>AFK!
+  disabled: <red>Wyszedłeś ze strefy <dark_red>AFK!
+  premium-reward-title: <#FF9300>⚓ <dark_gray>⁎ <white>Losowanie klucza afk szansa <#FF9300><chance>% <white>za <#FF9300><time> <dark_gray>⁑ <#FF9300><b><percentage>%
+  premium-success: <green>Otrzymałeś super <dark_green>nagrodę!
+  premium-fail: <red>Nie udało się trafić <dark_red>super nagrody!
+  standard-reward-title: <#1cfc03><b>$</b> <dark_gray>⁎ <white>Darmowe <#1cfc03>$<money> <white>otrzymasz za <#1cfc03><time> <dark_gray>⁑ <#1cfc03><b><percentage>%
+  standard-success: <green>Otrzymałeś standardową <dark_green>nagrodę!
+
+# ============================================
+# VANISH
+# ============================================
+vanish:
+  enabled: <green>Vanish został <dark_green>włączony!
+  disabled: <red>Vanish został <dark_red>wyłączony!
+
+# ============================================
+# WIADOMOŚCI JOIN/QUIT
+# ============================================
+join-quit:
+  join: <green>[+] <white>{PLAYER} <green>dołączył do gry!
+  quit: <red>[-] <white>{PLAYER} <red>opuścił grę!
+
+# ============================================
+# WIADOMOŚCI ŚMIERCI
+# ============================================
+death:
+  player-kill: <red>☠ <white>{KILLER} <red>zabił <white>{VICTIM}
+  player-death: <red>☠ <white>{PLAYER} <red>zginął
+  fall: <red>☠ <white>{PLAYER} <red>spadł z dużej wysokości
+  drown: <red>☠ <white>{PLAYER} <red>utonął
+  fire: <red>☠ <white>{PLAYER} <red>spłonął
+  lava: <red>☠ <white>{PLAYER} <red>usmażył się w lawie
+  explosion: <red>☠ <white>{PLAYER} <red>został wysadzony w powietrze
+  void: <red>☠ <white>{PLAYER} <red>wpadł do pustki
+  suffocation: <red>☠ <white>{PLAYER} <red>został zmiażdżony
+  generic: <red>☠ <white>{PLAYER} <red>zginął
+
+# ============================================
+# BROADCAST
+# ============================================
+broadcast:
+  usage: "<red>Użycie: <dark_red>/alert [subtitle/chat/actionbar/title] [wiadomość]"
+  sent: "<green>Broadcast został <dark_green>wysłany!"
+
+# ============================================
+# KOMENDY POMOCNICZE (FLY, SPEED, itp.)
+# ============================================
+msgFlyEnabled: <green>Latanie zostało <dark_green>włączone!
+msgFlyDisabled: <red>Latanie zostało <dark_red>wyłączone!
+msgSpeedUsage: "<red>Użycie: <dark_red>/speed [0.1-1.0]"
+msgSpeedRange: <red>Wartość musi być z zakresu <dark_red>0.1 do 1.0
+msgFlySpeedSet: <green>Ustawiono prędkość latania na <dark_green>{SPEED}
+msgWalkSpeedSet: <green>Ustawiono prędkość chodzenia na <dark_green>{SPEED}
+
+# ============================================
+# SYSTEM HOME
+# ============================================
+home:
+  set-success: "<green>Ustawiono dom <dark_green>{NAME}<green>!"
+  set-limit: "<red>Osiągnięto limit domów! <dark_red>Max: {LIMIT}"
+  set-exists: "<red>Dom o nazwie <dark_red>{NAME} <red>już istnieje!"
+  teleport-success: "<green>Teleportowano do domu <dark_green>{NAME}<green>!"
+  teleport-notfound: "<red>Dom <dark_red>{NAME} <red>nie istnieje!"
+  delete-success: "<green>Usunięto dom <dark_green>{NAME}<green>!"
+  delete-notfound: "<red>Dom <dark_red>{NAME} <red>nie istnieje!"
+  list-empty: "<red>Nie masz żadnych <dark_red>domów!"
+  list-header: "<green>Twoje domy <dark_gray>({COUNT}/{LIMIT})<green>:"
+  list-item: "<dark_gray>• <white>{NAME} <dark_gray>- <gray>({X}, {Y}, {Z})"
+  cooldown: "<red>Musisz poczekać <dark_red>{TIME}s <red>przed użyciem /home!"
+  usage-set: "<red>Użycie: <dark_red>/sethome [nazwa]"
+  usage-home: "<red>Użycie: <dark_red>/home [nazwa]"
+  usage-delhome: "<red>Użycie: <dark_red>/delhome [nazwa]"
+
+# ============================================
+# SYSTEM WARP
+# ============================================
+warp:
+  set-success: <green>Ustawiono warp <dark_green>{NAME}<green>!
+  set-exists: <red>Warp <dark_red>{NAME} <red>już istnieje!
+  teleport-success: <green>Teleportowano do warpu <dark_green>{NAME}<green>!
+  teleport-notfound: <red>Warp <dark_red>{NAME} <red>nie istnieje!
+  delete-success: <green>Usunięto warp <dark_green>{NAME}<green>!
+  delete-notfound: <red>Warp <dark_red>{NAME} <red>nie istnieje!
+  list-empty: <red>Nie ma żadnych <dark_red>warpów!
+  gui-title: <gradient:#97CFF5:#BAE0FA:#97CFF5>Warpy</gradient>
+  usage-setwarp: "<red>Użycie: <dark_red>/setwarp [nazwa]"
+  usage-warp: "<red>Użycie: <dark_red>/warp [nazwa]"
+  usage-delwarp: "<red>Użycie: <dark_red>/delwarp [nazwa]"
+
+# ============================================
+# KOWAL GUI
+# ============================================
+kowal:
+  title: <gradient:#FF9300:#FFAA00:#FF9300>Kowal</gradient>
+  crafting-name: <yellow>⚒ <gold>Stół Rzemieślniczy
+  crafting-lore:
+    - ""
+    - <gray>Kliknij aby otworzyć
+    - <gray>stół <gold>rzemieślniczy!
+  grindstone-name: <yellow>⚙ <gold>Szlifierka
+  grindstone-lore:
+    - ""
+    - <gray>Kliknij aby otworzyć
+    - <gold>szlifierkę <gray>(usuwanie zaklęć)!
+  anvil-name: <yellow>🔨 <gold>Kowadło
+  anvil-lore:
+    - ""
+    - <gray>Kliknij aby otworzyć
+    - <gold>kowadło!
+
+# ============================================
+# KSIĘGARZ GUI
+# ============================================
+ksiegarz:
+  title: <gradient:#9D5CFF:#B88AFF:#9D5CFF>Księgarz</gradient>
+  enchant-name: <light_purple>✨ <dark_purple>Stół Zaklęć
+  enchant-lore:
+    - ""
+    - <gray>Kliknij aby otworzyć
+    - <dark_purple>stół zaklęć!
+
+# ============================================
+# SYSTEM LOTERII
+# ============================================
+lottery:
+  gui-title: <gradient:#FFD700:#FFED4E:#FFD700>🎰 Loteria 🎰</gradient>
+  info-item-name: <yellow>ℹ <gold>Informacje
+  info-item-lore:
+    - ""
+    - "<white>Aktualna pula: <gradient:#6DFF45:#9DFF83:#6DFF45>${POOL}</gradient>"
+    - "<white>Ilość losów: <gradient:#FFD700:#FFED4E:#FFD700>{COUNT}</gradient>"
+    - ""
+    - "<gray>Kliknij aby odświeżyć!"
+  your-tickets-name: <green>🎫 <dark_green>Twoje losy
+  your-tickets-lore:
+    - ""
+    - "<white>Posiadasz <gradient:#FFD700:#FFED4E:#FFD700>{COUNT}</gradient> losów:"
+    - "<gray>{NUMBERS}"
+  your-tickets-empty:
+    - ""
+    - "<red>Nie posiadasz żadnych losów!"
+  buy-item-name: <green>💵 <dark_green>Kup los
+  buy-item-lore:
+    - ""
+    - "<white>Cena: <gradient:#6DFF45:#9DFF83:#6DFF45>$100</gradient>"
+    - "<white>Zakres: <gradient:#FFD700:#FFED4E:#FFD700>1-1000</gradient>"
+    - ""
+    - "<gray>Wpisz na chacie numer losu!"
+  buy-success: <green>Kupiono los <dark_green>#{NUMBER} <green>za <dark_green>$100<green>!
+  buy-no-money: <red>Nie masz <dark_red>$100 <red>na zakup losu!
+  buy-already-owned: <red>Ten numer jest już <dark_red>zajęty!
+  buy-invalid-number: <red>Numer musi być w zakresie <dark_red>1-1000!
+  buy-prompt: "<green>Wpisz numer losu na chacie <dark_green>(1-1000)<green>:"
+  buy-cancelled: <red>Anulowano zakup losu.
+  info-pool: "<green>Aktualna pula nagród: <dark_green>${POOL}"
+  info-tickets: "<green>Ilość kupionych losów: <dark_green>{COUNT}"
+  info-your-tickets: "<green>Twoje losy: <dark_green>{NUMBERS}"
+  info-no-tickets: <red>Nie masz żadnych <dark_red>losów!
+  draw-winner: |
+    
+    <gradient:#FFD700:#FFED4E:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+    <gradient:#FFD700:#FFED4E:#FFD700>         🎰 LOSOWANIE LOTERII 🎰</gradient>
+    <gradient:#FFD700:#FFED4E:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+    
+    <white>Wylosowany numer: <gradient:#FFD700:#FFED4E:#FFD700><b>#{NUMBER}</b></gradient>
+    <white>Zwycięzca: <gradient:#97CFF5:#BAE0FA:#97CFF5><b>{WINNER}</b></gradient>
+    <white>Wygrana: <gradient:#6DFF45:#9DFF83:#6DFF45><b>${PRIZE}</b></gradient>
+    
+   <gradient:#FFD700:#FFED4E:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+  draw-no-tickets: <red>Nikt nie kupił losów, <dark_red>losowanie anulowane!
+  usage: "<red>Użycie: <dark_red>/lotto <kup/info> [numer]"
+
+# ============================================
+# TOP MONEY
+# ============================================
+topmoney:
+  header: |
+    
+    <gradient:#FFD700:#FFED4E:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+    <gradient:#FFD700:#FFED4E:#FFD700>      💰 TOP 10 NAJBOGATSZYCH 💰</gradient>
+    <gradient:#FFD700:#FFED4E:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+  entry: "<white>{POSITION}. <gradient:#97CFF5:#BAE0FA:#97CFF5>{PLAYER}</gradient> <dark_gray>- <gradient:#6DFF45:#9DFF83:#6DFF45>${MONEY}</gradient>"
+  footer: <gradient:#FFD700:#FFED4E:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+  empty: <red>Nie znaleziono żadnych <dark_red>graczy!
+
+# ============================================
+# SYSTEM STATYSTYK
+# ============================================
+stats:
+  gui-title: <gradient:#97CFF5:#BAE0FA:#97CFF5>📊 Statystyki</gradient>
+  player-head-name: <gradient:#97CFF5:#BAE0FA:#97CFF5>{PLAYER}</gradient>
+  player-head-lore:
+    - ""
+    - "<white>Czas gry: <gradient:#FFD700:#FFED4E:#FFD700>{TIME}</gradient>"
+    - "<white>Pieniądze: <gradient:#6DFF45:#9DFF83:#6DFF45>${MONEY}</gradient>"
+    - ""
+  kills-item-name: <red>⚔ <dark_red>Zabójstwa
+  kills-item-lore:
+    - ""
+    - "<white>Ilość: <gradient:#FF4545:#FF8383:#FF4545>{KILLS}</gradient>"
+  deaths-item-name: <dark_red>☠ <red>Śmierci
+  deaths-item-lore:
+    - ""
+    - "<white>Ilość: <gradient:#AA0000:#FF5555:#AA0000>{DEATHS}</gradient>"
+  kdr-item-name: <yellow>📊 <gold>K/D Ratio
+  kdr-item-lore:
+    - ""
+    - "<white>Stosunek: <gradient:#FFD700:#FFED4E:#FFD700>{KDR}</gradient>"
+  blocks-item-name: <gray>⛏ <dark_gray>Zniszczone bloki
+  blocks-item-lore:
+    - ""
+    - "<white>Ilość: <gray>{BLOCKS}</gray>"
+  header: |
+    
+    <gradient:#97CFF5:#BAE0FA:#97CFF5>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+    <gradient:#97CFF5:#BAE0FA:#97CFF5>      📊 STATYSTYKI GRACZA 📊</gradient>
+    <gradient:#97CFF5:#BAE0FA:#97CFF5>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+  player: "<white>Gracz: <gradient:#97CFF5:#BAE0FA:#97CFF5>{PLAYER}</gradient>"
+  playtime: "<white>Czas gry: <gradient:#FFD700:#FFED4E:#FFD700>{TIME}</gradient>"
+  money: "<white>Pieniądze: <gradient:#6DFF45:#9DFF83:#6DFF45>${MONEY}</gradient>"
+  kills: "<white>Zabójstwa: <gradient:#FF4545:#FF8383:#FF4545>{KILLS}</gradient>"
+  deaths: "<white>Śmierci: <gradient:#AA0000:#FF5555:#AA0000>{DEATHS}</gradient>"
+  kdr: "<white>K/D Ratio: <gradient:#FFD700:#FFED4E:#FFD700>{KDR}</gradient>"
+  blocks-broken: "<white>Zniszczone bloki: <gray>{BLOCKS}</gray>"
+  footer: <gradient:#97CFF5:#BAE0FA:#97CFF5>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>
+  player-not-found: <red>Gracz <dark_red>{PLAYER} <red>nie został znaleziony!
+  usage: "<red>Użycie: <dark_red>/stats [gracz]"
+
+# ============================================
+# HELPOP
+# ============================================
+msgHelpopUsage: "<red>Użycie: <dark_red>/helpop [treść]"
+msgHelpopCooldown: <red>Zwolnij wysyłanie wiadomości na <dark_red>helpopie!
+msgHelpopSent: <green>Wiadomość do administracji <dark_green>została wysłana!
+helpopReceived:
+  - " <dark_gray>▷ <#97CFF5><b>Helpop <dark_gray>(<white>{PLAYER}<dark_gray>)"
+  - " <dark_gray>- <red>{MESSAGE}"
+helpopReceivedTitle: |-
+  <#97CFF5><b>Helpop</b>
+  <white>{MESSAGE}
+
+# ============================================
+# PAY
+# ============================================
+msgPayUsage: "<red>Użycie: <dark_red>/pay [gracz] [ilość]"
+msgPaySelf: <red>Ale co ty robisz?
+msgPayMin: <red>Nie możesz przelać mniej niż <dark_red>$100
+msgNoMoney: <red>Nie posiadasz tyle <dark_red>pieniędzy!
+msgPaySent: "<green>Przelano <dark_green>${AMOUNT} <green>dla gracza <dark_green>{PLAYER} <dark_gray>(<red>Podatek: ${TAX}<dark_gray>)"
+msgPayReceived: "<green>Otrzymałeś <dark_green>${AMOUNT} <green>od gracza <dark_green>{PLAYER}"
+
+# ============================================
+# MSG / REPLY
+# ============================================
+msgMsgUsage: "<red>Użycie: <dark_red>/msg [gracz] [wiadomość]"
+msgReplyUsage: "<red>Użycie: <dark_red>/r [wiadomość]"
+msgNoReply: <red>Z nikim ostatnio <dark_red>nie pisałeś!
+msgSelfMsg: <red>Czemu piszesz sam <dark_red>ze sobą?
+msgPlayerOffline: <red>Ten gracz jest <dark_red>offline!
+formatMsg: "<dark_gray>(<#97CFF5>{SENDER} <dark_gray>→ <#49B5FF>{RECEIVER}<dark_gray>) <dark_gray>» <white>{MESSAGE}"
+
+# ============================================
+# GAMEMODE
+# ============================================
+msgGamemodeUsage: "<red>Użycie: <dark_red>/gamemode [0/1/2/3]"
+msgGamemodeChangedSelf: "<green>Zmieniono twój tryb gry na <dark_green>{MODE}"
+msgGamemodeChangedOther: "<green>Zmieniono tryb gry gracza <dark_green>{PLAYER} <green>na <dark_green>{MODE}"
+
+# ============================================
+# REPAIR
+# ============================================
+msgRepairSuccess: <green>Przedmiot został <dark_green>naprawiony!
+msgRepairAllSuccess: <green>Przedmioty zostały <dark_green>naprawione!
+msgRepairError: <red>Nie możesz tego <dark_red>naprawić!
+
+# ============================================
+# INVSEE
+# ============================================
+msgInvseeUsage: "<red>Użycie: <dark_red>/invsee [gracz]"

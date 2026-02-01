@@ -1,0 +1,265 @@
+name: sagamc-core
+version: '1.0-SNAPSHOT'
+description: 'Stworzony z myślą o graczach!'
+main: org.sagamc.sagamcCore.SagamcCore
+api-version: '1.21'
+depend: [Vault, WorldGuard]
+
+# ============================================
+# KOMENDY
+# ============================================
+commands:
+  # --- TELEPORTACJA MIĘDZY ŚWIATAMI ---
+  swiat-pvp:
+    description: Przenosi gracza na świat PvP
+    usage: /swiat-pvp
+
+  swiat-nopvp:
+    description: Przenosi gracza na świat bez PvP
+    usage: /swiat-nopvp
+
+  # --- ZARZĄDZANIE PLUGINEM ---
+  sagacore:
+    description: Zarządzanie pluginem
+    usage: /sagacore reload
+
+  # --- SKLEP ---
+  kucharz:
+    description: Otwiera sklep z jedzeniem
+    usage: /kucharz
+    permission: sklep.kucharz
+
+  # --- KODY ---
+  kod:
+    description: Użyj kodu rabatowego
+    usage: /kod <kod>
+    aliases: [code]
+
+  # --- CHAT ---
+  chat:
+    description: Zarządzanie czatem
+    usage: /chat <on/off/clear/cooldown>
+    permission: sagamc.chat.admin
+
+  # --- TELEPORTACJA ---
+  tpa:
+    description: Prośba o teleportację do gracza
+    usage: /tpa <gracz>
+
+  tpaccept:
+    description: Zaakceptuj prośbę o teleportację
+    usage: /tpaccept <gracz/*>
+
+  tp:
+    description: Teleportuj się do gracza (admin)
+    usage: /tp <gracz>
+    permission: sagamc.tp
+
+  tphere:
+    description: Teleportuj gracza do siebie (admin)
+    usage: /tphere <gracz>
+    permission: sagamc.tphere
+    aliases: [s]
+
+  spawn:
+    description: Teleportacja na spawn
+    usage: /spawn
+
+  # --- HOME ---
+  sethome:
+    description: Ustaw dom
+    usage: /sethome [nazwa]
+
+  home:
+    description: Teleportuj się do domu
+    usage: /home [nazwa]
+
+  delhome:
+    description: Usuń dom
+    usage: /delhome [nazwa]
+
+  homes:
+    description: Lista domów
+    usage: /homes
+
+  # --- WARP ---
+  setwarp:
+    description: Ustaw warp
+    usage: /setwarp [nazwa] [opcjonalnie ikona]
+    permission: sagamc.warp.admin
+
+  warp:
+    description: Teleportuj się do warpu lub otwórz GUI
+    usage: /warp [nazwa]
+
+  delwarp:
+    description: Usuń warp
+    usage: /delwarp [nazwa]
+    permission: sagamc.warp.admin
+
+  # --- KOMENDY POMOCNICZE ---
+  fly:
+    description: Włącz/wyłącz latanie
+    usage: /fly
+    permission: sagamc.fly
+
+  speed:
+    description: Ustaw prędkość
+    usage: /speed <0.1-1.0>
+    permission: sagamc.speed
+
+  gamemode:
+    description: Zmień tryb gry
+    usage: /gamemode <0/1/2/3> [gracz]
+    permission: sagamc.gamemode
+    aliases: [gm]
+
+  repair:
+    description: Napraw przedmiot
+    usage: /repair
+    permission: sagamc.repair
+
+  repairall:
+    description: Napraw wszystkie przedmioty
+    usage: /repairall
+    permission: sagamc.repair
+
+  helpop:
+    description: Wiadomość do adminów
+    usage: /helpop <wiadomość>
+
+  pay:
+    description: Przelej pieniądze
+    usage: /pay <gracz> <kwota>
+
+  msg:
+    description: Prywatna wiadomość
+    usage: /msg <gracz> <wiadomość>
+
+  r:
+    description: Odpowiedz na wiadomość
+    usage: /r <wiadomość>
+    aliases: [reply]
+
+  invsee:
+    description: Zobacz ekwipunek gracza
+    usage: /invsee <gracz>
+    permission: sagamc.invsee
+
+  # --- VANISH ---
+  vanish:
+    description: Włącz/wyłącz tryb niewidzialności
+    usage: /vanish
+    permission: sagamc.vanish
+    aliases: [v]
+
+  # --- BROADCAST ---
+  alert:
+    description: Wyślij broadcast
+    usage: /alert [subtitle/chat/actionbar/title] [wiadomość]
+    permission: sagamc.broadcast
+    aliases: [bc, broadcast]
+
+  # --- GUI ---
+  kowal:
+    description: Otwórz GUI Kowala
+    usage: /kowal
+
+  ksiegarz:
+    description: Otwórz GUI Księgarza
+    usage: /ksiegarz
+
+  # --- LOTERIA ---
+  lotto:
+    description: System loterii
+    usage: /lotto <kup/info> [numer]
+    aliases: [loteria]
+
+  lottoadmin:
+    description: Zarządzanie loterią
+    usage: /lottoadmin <losuj/reset/info>
+    permission: sagamc.lottery.admin
+
+  # --- STATYSTYKI ---
+  topmoney:
+    description: Top 10 najbogatszych graczy
+    usage: /topmoney
+    aliases: [baltop]
+
+  stats:
+    description: Statystyki gracza
+    usage: /stats [gracz]
+
+  # --- CASE ---
+  saga-case:
+    description: Komenda saga-case
+    usage: /saga-case
+    permission: sagamc.sagacase
+
+# ============================================
+# PERMISJE
+# ============================================
+permissions:
+  # --- PODSTAWOWE ---
+  sagamc.pvp:
+    default: true
+  sagamc.nopvp:
+    default: true
+  sagamc.reload:
+    default: op
+
+  # --- SKLEP ---
+  sklep.kucharz:
+    default: true
+
+  # --- CHAT ---
+  sagamc.chat.bypass:
+    default: op
+  sagamc.chat.admin:
+    default: op
+
+  # --- TELEPORTACJA ---
+  sagamc.tp:
+    default: op
+  sagamc.tphere:
+    default: op
+
+  # --- HOME ---
+  sagamc.home.vip:
+    default: false
+
+  # --- WARP ---
+  sagamc.warp.admin:
+    default: op
+
+  # --- KOMENDY POMOCNICZE ---
+  sagamc.fly:
+    default: op
+  sagamc.speed:
+    default: op
+  sagamc.gamemode:
+    default: op
+  sagamc.repair:
+    default: op
+  sagamc.helpop.receive:
+    default: op
+  sagamc.invsee:
+    default: op
+
+  # --- VANISH ---
+  sagamc.vanish:
+    default: op
+  sagamc.vanish.see:
+    default: op
+
+  # --- BROADCAST ---
+  sagamc.broadcast:
+    default: op
+
+  # --- LOTERIA ---
+  sagamc.lottery.admin:
+    default: op
+
+  # --- CASE ---
+  sagamc.sagacase:
+    default: op
